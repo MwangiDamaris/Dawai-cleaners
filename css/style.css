@@ -151,6 +151,7 @@ a,
 img {
      max-width: 100%;
      height: auto;
+     
 }
 
  :focus {
@@ -1117,13 +1118,15 @@ ul.social_icon li a:hover {
      color: #fff;
 }
 .header-top {
-     background: url(../images/banner1.jpg);
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     padding-bottom: 90px;
+    background: url(../images/IMG-20230607-WA0056.jpg),url(../images/banner1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+    animation:slideBackground 10s infinite;
 }
+
 .header {
-     position: absolute;
+     position: fixed;
      z-index: 999;
      width: 100%;
      padding: 15px 40px;
@@ -1358,8 +1361,9 @@ ul.social_icon li a:hover {
      margin: 0px;
 }
 .ourwork .our figure img {
-     width: 100%;
-}
+        width: 100%;
+        border-radius: 100%;
+    }
 .ourwork .our p {
      font-size: 15px;
      font-weight: 500;
@@ -1550,14 +1554,19 @@ ul.social_icon li a:hover {
 
 /** contact section **/
 #map {
-     height: 100%;
-     min-height: 670px;
+    height: 100%;
+    min-height: 670px;
+    
+}
+#map img{
+    height:100%;
+    width:100%;
 }
 .white {
-     color: #fff;
-     font-size: 50px;
-     font-weight: 500;
-}
+        color: #fff;
+        font-size: 50px;
+        font-weight: 500;
+    }
 .titlepage h2 {
      padding: 0px 0px 6px 0px;
      text-transform: uppercase;
